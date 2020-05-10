@@ -41,7 +41,7 @@ http://localhost:5000/dept/law
 
 Looking for an exact opsition can be done using the below link:
 http://localhost:5000/dept/law/law%20clerk
-## Note: Here '%20' denotes a space in between words
+** Note: Here '%20' denotes a space in between words **
 
 Finally, seeing a single person's entry/tuple from the database can be done using the below link:
 http://localhost:5000/dept/law/law%20clerk/lim,%20%20teresa
