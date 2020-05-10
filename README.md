@@ -22,7 +22,7 @@ python app.py
 
 # Running with Docker Installed
 
-## 1. Install Docker Desktop (for Mac / Windows)(Note: Only works for Windows 10 Pro / Enterprise)
+## 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop) (for Mac / Windows)(Note: Only works for Windows 10 Pro / Enterprise)
 ## 2. Now you need to pull the image uploaded on the [Docker repository](https://hub.docker.com/r/sidduj/assignment-5), so for this:
 ## In the command prompt:
 ```
