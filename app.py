@@ -36,8 +36,6 @@ class Departmental_pos_name(Resource):
         query = conn.execute("select distinct NAME from salaries where Department='%s'"%department_name.upper() + "AND Position='%s'"%pos_name.upper())
         result = {'name': [i[0] for i in query.cursor.fetchall()]}
         return result
-        #We can have PUT,DELETE,POST here. But in our API GET implementation is sufficient
-
 
 class Departmental_pos_name_sal(Resource):
     def get(self, department_name, pos_name, name):
@@ -46,7 +44,6 @@ class Departmental_pos_name_sal(Resource):
         #Query the result and get cursor.Dumping that data to a JSON is looked by extension
         result = {'data': [dict(zip(tuple (query.keys()) ,i)) for i in query.cursor]}
         return result
-        #We can have PUT,DELETE,POST here. But in our API GET implementation is sufficient
 
 api.add_resource(Departmental_pos_name_sal, '/dept/<string:department_name>/<string:pos_name>/<string:name>')
 api.add_resource(Departmental_pos_name, '/dept/<string:department_name>/<string:pos_name>')
